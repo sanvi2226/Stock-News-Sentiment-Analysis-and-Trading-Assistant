@@ -14,7 +14,7 @@ import seaborn as sns
 import yfinance as yf
 
 # YouTube API
-YOUTUBE_API_KEY = "AIzaSyCVAXk2f61gJvrZ64Ntf_xN8xLzUSjqwsU"
+YOUTUBE_API_KEY = "your-key"
 def search_youtube_videos(query, max_results=5):
     url = f"https://www.googleapis.com/youtube/v3/search?part=snippet&q={query}&type=video&maxResults={max_results}&key={YOUTUBE_API_KEY}"
     response = requests.get(url).json()
@@ -359,7 +359,7 @@ elif page == "Trading Assistant":
 
         # 5. Stock History
         with tabs[4]:
-            ALPHA_VANTAGE_API_KEY = "1GQKKJ0CVT2Q3D3I"  # Replace with actual key
+            ALPHA_VANTAGE_API_KEY = "your-key"  
 
             def get_fundamentals_av(ticker):
                 url = f"https://www.alphavantage.co/query?function=OVERVIEW&symbol={ticker}&apikey={ALPHA_VANTAGE_API_KEY}"
